@@ -1,4 +1,350 @@
 {
+  "x_accounts": [
+    {
+      "name": "xiaoan",
+      "handle": "_seanliu"
+    },
+    {
+      "name": "n8n.io",
+      "handle": "n8n_io"
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete"
+    },
+    {
+      "name": "Alex Finn",
+      "handle": "AlexFinn"
+    },
+    {
+      "name": "OpenClaw",
+      "handle": "openclaw"
+    },
+    {
+      "name": "Dan Koe",
+      "handle": "thedankoe"
+    },
+    {
+      "name": "Google Antigravity",
+      "handle": "antigravity"
+    },
+    {
+      "name": "vittorio",
+      "handle": "IterIntellectus"
+    },
+    {
+      "name": "Lydia Hallie",
+      "handle": "lydiahallie"
+    },
+    {
+      "name": "Sid Bharath",
+      "handle": "Siddharth87"
+    },
+    {
+      "name": "Rohan Paul",
+      "handle": "rohanpaul_ai"
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212"
+    },
+    {
+      "name": "Simon Willison",
+      "handle": "simonw"
+    },
+    {
+      "name": "Jaana Dogan",
+      "handle": "rakyl"
+    },
+    {
+      "name": "宝玉",
+      "handle": "dotey"
+    },
+    {
+      "name": "Boris Cherny",
+      "handle": "bcherny"
+    },
+    {
+      "name": "Alex Slater",
+      "handle": "alexslater"
+    },
+    {
+      "name": "Zach Yadegari",
+      "handle": "zach_yadegari"
+    },
+    {
+      "name": "yetone",
+      "handle": "yetone"
+    },
+    {
+      "name": "Deedy",
+      "handle": "deedydas"
+    },
+    {
+      "name": "Panda",
+      "handle": "Jiaxi_Cui"
+    },
+    {
+      "name": "Manus",
+      "handle": "ManusAI"
+    },
+    {
+      "name": "Red Xiao",
+      "handle": "Red_Xiao_"
+    },
+    {
+      "name": "Nat Friedman",
+      "handle": "natfriedman"
+    },
+    {
+      "name": "Meta",
+      "handle": "Meta"
+    },
+    {
+      "name": "Alexandr Wang",
+      "handle": "alexandr_wang"
+    },
+    {
+      "name": "Replit",
+      "handle": "Replit"
+    },
+    {
+      "name": "Amp",
+      "handle": "AmpCode"
+    },
+    {
+      "name": "Google Gemini",
+      "handle": "GeminiApp"
+    },
+    {
+      "name": "CISS",
+      "handle": "CISS_Islamabad"
+    },
+    {
+      "name": "Claude",
+      "handle": "claudeai"
+    },
+    {
+      "name": "Anthropic",
+      "handle": "AnthropicAI"
+    },
+    {
+      "name": "Demis Hassabis",
+      "handle": "demishassabis"
+    },
+    {
+      "name": "泊舟",
+      "handle": "bozhou_ai"
+    },
+    {
+      "name": "WaytoAGI",
+      "handle": "WaytoAGI"
+    },
+    {
+      "name": "Andy Stewart",
+      "handle": "manateelazycat"
+    },
+    {
+      "name": "Jürgen Schmidhuber",
+      "handle": "SchmidhuberAI"
+    },
+    {
+      "name": "Jeff Dean",
+      "handle": "JeffDean"
+    },
+    {
+      "name": "Machina",
+      "handle": "EXM7777"
+    },
+    {
+      "name": "levelsio",
+      "handle": "levelsio"
+    },
+    {
+      "name": "OpenAI",
+      "handle": "OpenAI"
+    },
+    {
+      "name": "Kevin Weil",
+      "handle": "kevinweil"
+    },
+    {
+      "name": "Nichole Wischoff",
+      "handle": "NWischoff"
+    },
+    {
+      "name": "Austen Allred",
+      "handle": "Austen"
+    },
+    {
+      "name": "Greg Brockman",
+      "handle": "gdb"
+    },
+    {
+      "name": "Suhail",
+      "handle": "Suhail"
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie"
+    },
+    {
+      "name": "roon",
+      "handle": "tszzl"
+    },
+    {
+      "name": "Paul Graham",
+      "handle": "paulg"
+    },
+    {
+      "name": "Andrej Karpathy",
+      "handle": "karpathy"
+    },
+    {
+      "name": "Nikita Bier",
+      "handle": "nikitabier"
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan"
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad"
+    },
+    {
+      "name": "Sam Altman",
+      "handle": "sama"
+    },
+    {
+      "name": "Gokul Rajaram",
+      "handle": "gokulr"
+    },
+    {
+      "name": "Alex Iskold",
+      "handle": "alexiskold"
+    },
+    {
+      "name": "Matt Turck",
+      "handle": "mattturck"
+    },
+    {
+      "name": "Jack Altman",
+      "handle": "jaltma"
+    },
+    {
+      "name": "Sar Haribhakti",
+      "handle": "sartbakdh"
+    },
+    {
+      "name": "Eric Bahn",
+      "handle": "ericbahn"
+    },
+    {
+      "name": "Semil",
+      "handle": "semil"
+    },
+    {
+      "name": "Nicole DeTommaso",
+      "handle": "nic_detommaso"
+    },
+    {
+      "name": "Elad Gil",
+      "handle": "eladgil"
+    },
+    {
+      "name": "sarah guo",
+      "handle": "saranormous"
+    },
+    {
+      "name": "No Priors",
+      "handle": "NoPriorsPod"
+    },
+    {
+      "name": "South Park Commons",
+      "handle": "southpkcommons"
+    },
+    {
+      "name": "Riley Brown",
+      "handle": "rileybrown"
+    },
+    {
+      "name": "Lenny Rachitsky",
+      "handle": "lennysan"
+    },
+    {
+      "name": "Every",
+      "handle": "every"
+    },
+    {
+      "name": "Y Combinator",
+      "handle": "ycombinator"
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang"
+    },
+    {
+      "name": "The AI Daily Brief",
+      "handle": "AIDailyBrief"
+    },
+    {
+      "name": "GREG ISENBERG",
+      "handle": "gregisenberg"
+    },
+    {
+      "name": "The Rundown AI",
+      "handle": "TheRundownAI"
+    },
+    {
+      "name": "Google DeepMind",
+      "handle": "GoogleDeepMind"
+    },
+    {
+      "name": "Google AI",
+      "handle": "GoogleAI"
+    },
+    {
+      "name": "Tom Huang",
+      "handle": "tuturetom"
+    },
+    {
+      "name": "a16z",
+      "handle": "a16z"
+    },
+    {
+      "name": "NASA",
+      "handle": "NASA"
+    },
+    {
+      "name": "Elon Musk",
+      "handle": "elonmusk"
+    },
+    {
+      "name": "Google AI Studio",
+      "handle": "GoogleAIStudio"
+    },
+    {
+      "name": "fabian",
+      "handle": "fabianstelzer"
+    },
+    {
+      "name": "Andrew Wilkinson",
+      "handle": "awilkinson"
+    },
+    {
+      "name": "Patrick Collison",
+      "handle": "patrickc"
+    },
+    {
+      "name": "Yishan",
+      "handle": "yishan"
+    },
+    {
+      "name": "TypeScript",
+      "handle": "typescript"
+    }
+  ],
   "podcasts": [
     {
       "name": "Latent Space",
@@ -46,32 +392,5 @@
       "articleBaseUrl": "https://claude.com/blog/",
       "fetchMethod": "http"
     }
-  ],
-  "x_accounts": [
-    { "name": "Andrej Karpathy", "handle": "karpathy" },
-    { "name": "Swyx", "handle": "swyx" },
-    { "name": "Josh Woodward", "handle": "joshwoodward" },
-    { "name": "Kevin Weil", "handle": "kevinweil" },
-    { "name": "Peter Yang", "handle": "petergyang" },
-    { "name": "Nan Yu", "handle": "thenanyu" },
-    { "name": "Madhu Guru", "handle": "realmadhuguru" },
-    { "name": "Amanda Askell", "handle": "AmandaAskell" },
-    { "name": "Cat Wu", "handle": "_catwu" },
-    { "name": "Thariq", "handle": "trq212" },
-    { "name": "Google Labs", "handle": "GoogleLabs" },
-    { "name": "Amjad Masad", "handle": "amasad" },
-    { "name": "Guillermo Rauch", "handle": "rauchg" },
-    { "name": "Alex Albert", "handle": "alexalbert__" },
-    { "name": "Aaron Levie", "handle": "levie" },
-    { "name": "Ryo Lu", "handle": "ryolu_" },
-    { "name": "Garry Tan", "handle": "garrytan" },
-    { "name": "Matt Turck", "handle": "mattturck" },
-    { "name": "Zara Zhang", "handle": "zarazhangrui" },
-    { "name": "Nikunj Kothari", "handle": "nikunj" },
-    { "name": "Peter Steinberger", "handle": "steipete" },
-    { "name": "Dan Shipper", "handle": "danshipper" },
-    { "name": "Aditya Agarwal", "handle": "adityaag" },
-    { "name": "Sam Altman", "handle": "sama" },
-    { "name": "Claude", "handle": "claudeai" }
   ]
 }
