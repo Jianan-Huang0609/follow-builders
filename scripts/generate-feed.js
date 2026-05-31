@@ -984,7 +984,7 @@ async function main() {
   // If a specific --*-only flag is set, only that feed type runs.
   // If no flag is set, all three run.
   const runTweets = tweetsOnly || (!podcastsOnly && !blogsOnly);
-  const runPodcasts = podcastsOnly || (!tweetsOnly && !blogsOnly);
+  let runPodcasts = podcastsOnly || (!tweetsOnly && !blogsOnly);
   const runBlogs = blogsOnly || (!tweetsOnly && !podcastsOnly);
 
   const xBearerToken = process.env.X_BEARER_TOKEN;
