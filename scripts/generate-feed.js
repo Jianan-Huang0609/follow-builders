@@ -20,6 +20,7 @@ import { join } from "path";
 // -- Constants ---------------------------------------------------------------
 
 const POD2TXT_BASE = "https://pod2txt.vercel.app/api";
+const SUPADATA_API_BASE = "https://api.supadata.ai/v1";
 const X_API_BASE = "https://api.x.com/2";
 // Some RSS hosts (notably Substack) block non-browser user agents from cloud IPs.
 // Using a real Chrome UA avoids 403 errors in GitHub Actions.
@@ -370,11 +371,40 @@ async function fetchPod2txtTranscript(rssUrl, guid, apiKey) {
   return { error: "Timed out waiting for transcript processing" };
 }
 
+// Fetches transcript from Supadata using YouTube video ID.
+// Supadata handles YouTube transcript retrieval natively.
+async function fetchSupadataTranscript(videoId, apiKey) {
+  const res = await fetch(
+    `${SUPADATA_API_BASE}/youtube/transcript?videoId=${videoId}&text=true`,
+    { headers: { "x-api-key": apiKey } }
+  );
+
+  if (!res.ok) {
+    const text = await res.text().catch(() => "");
+    return { error: `Supadata HTTP ${res.status}: ${text.slice(0, 200)}` };
+  }
+
+  const data = await res.json();
+
+  // Supadata returns { content: "transcript text", ... } or similar
+  if (data.content) {
+    return { transcript: data.content };
+  }
+  if (data.transcript) {
+    return { transcript: data.transcript };
+  }
+  if (typeof data === "string") {
+    return { transcript: data };
+  }
+
+  return { error: `Unexpected Supadata response: ${JSON.stringify(data).slice(0, 200)}` };
+}
+
 // Main podcast fetching function. For each podcast:
 // 1. Fetches the RSS feed to discover episodes
 // 2. Filters by lookback window and dedup
 // 3. Fetches transcript via pod2txt for the newest unseen episode
-async function fetchPodcastContent(podcasts, apiKey, state, errors) {
+async function fetchPodcastContent(podcasts, apiKey, supadataKey, state, errors) {
   const cutoff = new Date(Date.now() - PODCAST_LOOKBACK_HOURS * 60 * 60 * 1000);
   const allCandidates = [];
 
@@ -452,43 +482,15 @@ async function fetchPodcastContent(podcasts, apiKey, state, errors) {
     console.error(`    - "${v.title}" published=${v.publishedAt || "unknown"}`);
   }
 
-  // Step 3: Try each candidate until we get a transcript from pod2txt
+  // Step 3: Try each candidate for a transcript
+  // Strategy: Supadata (YouTube) > pod2txt (RSS) > skip
   for (const selected of withinWindow) {
     console.error(`    Fetching transcript for "${selected.title}"...`);
-
-    const result = await fetchPod2txtTranscript(
-      selected.podcast.rssUrl,
-      selected.guid,
-      apiKey,
-    );
 
     // Mark as seen regardless so we don't retry failed episodes daily
     state.seenVideos[selected.guid] = Date.now();
 
-    if (result.error) {
-      console.error(
-        `    Transcript error: ${result.error} — skipping to next candidate`,
-      );
-      errors.push(
-        `Podcast: Transcript error for "${selected.title}": ${result.error}`,
-      );
-      continue;
-    }
-
-    if (!result.transcript) {
-      console.error(
-        `    Empty transcript for "${selected.title}" — skipping to next candidate`,
-      );
-      continue;
-    }
-
-    console.error(
-      `    Selected: "${selected.title}" (transcript: ${result.transcript.length} chars)`,
-    );
-
-    // Try to resolve the exact YouTube video URL for this episode. If the
-    // lookup fails (no YouTube channel configured, no title match, network
-    // error), fall back to the channel URL so the feed still works.
+    // Try to resolve the YouTube video URL first (needed for Supadata)
     const youtubeUrl = await findYouTubeEpisodeUrl(
       selected.podcast.url,
       selected.title,
@@ -501,6 +503,59 @@ async function fetchPodcastContent(podcasts, apiKey, state, errors) {
       );
     }
 
+    let transcript = null;
+    let transcriptError = null;
+
+    // Strategy 1: Try Supadata if key is available and we have a YouTube URL
+    if (supadataKey && youtubeUrl) {
+      const videoIdMatch = youtubeUrl.match(
+        /(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/,
+      );
+      if (videoIdMatch) {
+        console.error(`      Trying Supadata (videoId: ${videoIdMatch[1]})...`);
+        const result = await fetchSupadataTranscript(videoIdMatch[1], supadataKey);
+        if (result.transcript) {
+          transcript = result.transcript;
+          console.error(`      Supadata: ${transcript.length} chars`);
+        } else {
+          transcriptError = result.error;
+          console.error(`      Supadata failed: ${transcriptError}`);
+        }
+      }
+    }
+
+    // Strategy 2: Fall back to pod2txt if Supadata didn't work
+    if (!transcript && apiKey) {
+      console.error(`      Trying pod2txt...`);
+      const result = await fetchPod2txtTranscript(
+        selected.podcast.rssUrl,
+        selected.guid,
+        apiKey,
+      );
+      if (result.transcript) {
+        transcript = result.transcript;
+        console.error(`      pod2txt: ${transcript.length} chars`);
+      } else if (!transcriptError) {
+        transcriptError = result.error;
+      }
+    }
+
+    if (!transcript) {
+      console.error(
+        `    No transcript available: ${transcriptError || "no API keys configured"} — skipping to next candidate`,
+      );
+      if (transcriptError) {
+        errors.push(
+          `Podcast: Transcript error for "${selected.title}": ${transcriptError}`,
+        );
+      }
+      continue;
+    }
+
+    console.error(
+      `    Selected: "${selected.title}" (transcript: ${transcript.length} chars)`,
+    );
+
     return [
       {
         source: "podcast",
@@ -509,7 +564,7 @@ async function fetchPodcastContent(podcasts, apiKey, state, errors) {
         guid: selected.guid,
         url: youtubeUrl || selected.podcast.url,
         publishedAt: selected.publishedAt,
-        transcript: result.transcript,
+        transcript,
       },
     ];
   }
@@ -989,10 +1044,19 @@ async function main() {
 
   const xBearerToken = process.env.X_BEARER_TOKEN;
   const pod2txtKey = process.env.POD2TXT_API_KEY;
+  const supadataKey = process.env.SUPADATA_API_KEY;
 
-  if (runPodcasts && !pod2txtKey) {
-    console.error("POD2TXT_API_KEY not set — skipping podcasts");
+  if (runPodcasts && !pod2txtKey && !supadataKey) {
+    console.error("POD2TXT_API_KEY and SUPADATA_API_KEY not set — skipping podcasts");
     runPodcasts = false;
+  } else if (runPodcasts) {
+    if (supadataKey && !pod2txtKey) {
+      console.error("Using Supadata for podcast transcripts");
+    } else if (pod2txtKey && !supadataKey) {
+      console.error("Using pod2txt for podcast transcripts");
+    } else {
+      console.error("Using Supadata (primary) + pod2txt (fallback) for podcast transcripts");
+    }
   }
   if (runTweets && !xBearerToken) {
     console.error("X_BEARER_TOKEN not set");
@@ -1036,10 +1100,11 @@ async function main() {
 
   // Fetch podcasts
   if (runPodcasts) {
-    console.error("Fetching podcast content (RSS + pod2txt)...");
+    console.error("Fetching podcast content (RSS + Supadata/pod2txt)...");
     const podcasts = await fetchPodcastContent(
       sources.podcasts,
       pod2txtKey,
+      supadataKey,
       state,
       errors,
     );
