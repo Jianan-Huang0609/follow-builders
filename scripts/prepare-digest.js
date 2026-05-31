@@ -76,6 +76,7 @@ async function main() {
   const [feedX, feedPodcasts, feedBlogs] = await Promise.all([
     fetchJSON(FEED_X_URL),
     fetchJSON(FEED_PODCASTS_URL),
+    fetchJSON(FEED_BLOGS_URL),
     fetchJSON(FEED_BLOGS_URL)
   ]);
 

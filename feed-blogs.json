@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T13:28:43.191Z",
+  "generatedAt": "2026-05-31T13:49:04.931650+00:00",
   "lookbackHours": 72,
   "blogs": [
     {
@@ -41,9 +41,97 @@
       "author": "",
       "description": "",
       "content": "Today we’re expanding what you can connect to Claude. Alongside the work tools you already use, you can now connect the apps you use throughout your week, including AllTrails, Instacart, Audible, Tripadvisor, Intuit TurboTax, and more. How people have been using connectors Since launching in July 2025, the Claude directory has grown to over 200 connectors, spanning popular apps for design, finance, productivity, and health used by millions of people every day. We’ve found that people often connect multiple apps and use them together in a single conversation with Claude. For example, a product manager will pull a query from Amplitude, turn it into a Canva deck, and drop the link into Asana for the team, all without leaving the conversation. This expansion extends that functionality to more of the tools you use outside of work. Starting today, Claude connects to AllTrails, Audible, Booking.com, Instacart, Intuit Credit Karma, Intuit TurboTax, Resy, Spotify, StubHub, Taskrabbit, Thumbtack, Tripadvisor, Uber, Uber Eats, and Viator, with more on the way. Connectors dynamically show up in conversations We’ve also changed how connectors show up in conversations. Claude now suggests the right app for what you’re doing, like finding a reservation, adding to a grocery cart, or identifying a flight. It’s working from what you’ve told it: your preferences, your context, your conversation. This all happens inside your conversation. Ask Claude to recommend a weekend hike, and AllTrails will surface trails nearby that match your preferences. You can then refine the recommendations by asking for something shorter, more scenic, or dog-friendly without leaving the thread. When more than one connected app could help answer your question, Claude shows them all and lets you choose. You control what you see and share Claude is ad-free and will stay that way. There are no paid placements or sponsored answers in conversations with Claude. When two connectors could help, you see both, ranked by what’s most useful to you. Connecting a service gives Claude access to it on your behalf. Your data from that app isn’t used to train our models, and the app doesn’t see your other conversations with Claude. You can also disconnect it at any time. Claude suggests connectors and makes recommendations. But you stay in control of its actions: before it books or purchases something on your behalf, it’s designed to check with you first. Getting started The more apps you connect, the more Claude can do. Claude suggests relevant connectors as you work, which you can install with a click on desktop or a few taps on mobile. Once connected, the service is available in every conversation. Connectors are available on all plans, with mobile in beta. See the full list at claude.ai/directory/connectors . If you build a product that would be useful in Claude, submit it to our directory here . For more information on getting started with connectors, along with security and privacy best practices when connecting data sources to Claude, visit our Help Center ."
+    },
+    {
+      "source": "blog",
+      "name": "OpenAI Blog",
+      "title": "Boston Children’s uses AI to unlock new diagnoses",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "publishedAt": "2026-05-29T12:00:00+00:00",
+      "content": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases."
+    },
+    {
+      "source": "blog",
+      "name": "OpenAI Blog",
+      "title": "How Braintrust turns customer requests into code with Codex",
+      "url": "https://openai.com/index/braintrust",
+      "publishedAt": "2026-05-29T12:00:00+00:00",
+      "content": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster."
+    },
+    {
+      "source": "blog",
+      "name": "OpenAI Blog",
+      "title": "Strengthening societal resilience with Rosalind Biodefense",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "publishedAt": "2026-05-29T03:00:00+00:00",
+      "content": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI."
+    },
+    {
+      "source": "blog",
+      "name": "OpenAI Blog",
+      "title": "A shared playbook for trustworthy third party evaluations",
+      "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+      "publishedAt": "2026-05-29T00:00:00+00:00",
+      "content": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems."
+    },
+    {
+      "source": "blog",
+      "name": "GitHub Blog",
+      "title": "Still a developer. Just outside. Our latest GitHub Shop collection is here.",
+      "url": "https://github.blog/news-insights/company-news/still-a-developer-just-outside-our-latest-github-shop-collection-is-here/",
+      "publishedAt": "2026-05-28T18:18:43+00:00",
+      "content": "Sometimes the best ideas come to you while you&rsquo;re out with friends, floating in the pool, or setting up that beach picnic&mdash;lightning hits, and you realize you have the perfect solve for that pesky bug that&rsquo;s been keeping you up at night. We&rsquo;ve been there too. That&rsquo;s what inspired us to create the new ESC collection. It&rsquo;s not a manifesto to put down tools and chill at the beach (though that sounds nice too), it&rsquo;s the recognition that occasionally we have to escape the confines of a desk for the problem-solving to begin. Check out the ESC collection Clothes. But make it developer. Long-time fan of the shop already know our hat and socks. &ldquo;But where&rsquo;s the tee?&rdquo; you all cried. You asked. Here it is . Plus, the hat gets a fresh colorway. Plus, you can now walk around the pool and maintain that developer wink with our new pool slides . <figure class=\"wp-block-image size-lar"
+    },
+    {
+      "source": "blog",
+      "name": "Hugging Face Blog",
+      "title": "Profiling in PyTorch (Part 1): A Beginner's Guide to torch.profiler",
+      "url": "https://huggingface.co/blog/torch-profiler",
+      "publishedAt": "2026-05-29T00:00:00+00:00",
+      "content": ""
+    },
+    {
+      "source": "blog",
+      "name": "Simon Willison",
+      "title": "Quoting Karen Kwok for Reuters Breakingviews",
+      "url": "https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything",
+      "publishedAt": "2026-05-31T01:48:12+00:00",
+      "content": "Anthropic defines “run-rate revenue” in two parts. Use the last 28 days of sales ⁠from customers charged on a consumption basis and multiply it by 13. Then, multiply the monthly subscription take by 12, ​and add the two together. &mdash; Karen Kwok for Reuters Breakingviews , citing \"a person familiar with the matter\" Tags: anthropic , ai"
+    },
+    {
+      "source": "blog",
+      "name": "Simon Willison",
+      "title": "How we contain Claude across products",
+      "url": "https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything",
+      "publishedAt": "2026-05-30T21:36:24+00:00",
+      "content": "How we contain Claude across products A complaint I often have about sandboxing products is that they are rarely thoroughly documented , and in the absence of detailed documentation it's hard to know how much I can trust them. Anthropic just published a fantastic overview of how their various sandbox techniques work across Claude.ai , Claude Code, and Cowork. We constrain where and how an agent can act with process sandboxes, VMs, filesystem boundaries, and egress controls. The goal is to set a hard boundary on what an agent can reach. For example, if credentials never enter the sandbox, they can't be exfiltrated, regardless of whether the cause is a user, a model finding a “creative” path, or an attacker. Claude.ai uses gVisor. Claude Code, run locally, uses Seatbelt on macOS and Bubblewrap on Linux. Claude Cowork runs a full VM (Apple's Virtualization framework on macOS, HCS on Windows). There's a lot in here, including some interesting stories of risks they missed such as the api.anthropic.com/v1/files exfiltration vector covered here previously . This reminded me it's time I took another look at Anthropic's open source srt (Anthropic Sandbox Runtime) tool - it's mature enough know that I'm ready to give it a proper go. Tags: sandboxing , security , ai , generative-ai , llms , anthropi"
+    },
+    {
+      "source": "blog",
+      "name": "Simon Willison",
+      "title": "Running Python ASGI apps in the browser via Pyodide + a service worker",
+      "url": "https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything",
+      "publishedAt": "2026-05-30T21:02:16+00:00",
+      "content": "Research: Running Python ASGI apps in the browser via Pyodide + a service worker Datasette Lite is my version of Datasette that runs entirely in the browser using Pyodide in WebAssembly. When I first built it four years ago I used Web Workers and code that intercepts navigation operations and fetches the generated HTML by running the Python app. This worked, but had the disadvantage that any JavaScript in &lt;script&gt; tags would not be executed - breaking some Datasette functionality and a whole lot of Datasette plugins. This morning I set Claude Opus 4.8 the task (in Claude Code for web) of figuring out how to run Python ASGI apps in Pyodide using Service Workers instead, and it seems to work! Here's a basic ASGI FastCGI demo and here's a demo that runs Datasette 1.0a31 . I'm still getting my head around exactly how it works, but once I've done that I plan to upgrade Datasette Lite itself. Tags: javascript , python , datasette , asgi , service-workers , pyodide , datasette-lite , claude-code"
+    },
+    {
+      "source": "blog",
+      "name": "Simon Willison",
+      "title": "I Am Retiring from Tech to Live Offline",
+      "url": "https://simonwillison.net/2026/May/30/retiring-from-tech-to-live-offline/#atom-everything",
+      "publishedAt": "2026-05-30T19:39:08+00:00",
+      "content": "I Am Retiring from Tech to Live Offline I've seen a lot of posts on forums from people threatening to quit their careers over AI. This is not one of those: Chad Whitacre is taking concrete steps, starting with this typewritten, scanned letter I'm retiring from tech. Well, \"retiring\" is euphemistic. I'm stepping away from tech, and that includes Open Source. [...] AI was the last straw. Have you heard of that island off India where the indigenous population kills any outsiders fool-hardy enough to land? They are doing the rest of us a favor by preserving a way of life we may need again someday, or at the very least should not want to see completely extinguished. A reminder. Never forget your roots. Here in Pennsylvania we have the Amish performing a similar function. Significantly less hostile, though still set apart, they bear witness to what was normal for all of us a couple short centuries ago: horse and buggy, wood stoves and lanterns. My intent is to be AI Amish, which means Internet Amish. Not 1780, but 1980. Neo-Amish. I'm fine driving a car and flipping a lightswitch, by which I mean that they don't make me into something I hate, which AI and [struck through: social media] [handwritten above: doomscrolling] do. I'll admit that at first I wasn't entirely sure if this was serious. Then I found this earlier post by Chad from Feb 19 2026, Spitting Out the Agentic Kool-Aid : I figured I’d better taste the Kool-Aid in order to form an opinion, so I dove into Claude Code with Opus 4.5 on a side project. I spent three 12+ hour days with it. I was intoxicated. My family was weirded out. [...] It weirded me out too, when I unplugged for a long weekend. Something felt off. It was like I had another “person”"
+    },
+    {
+      "source": "blog",
+      "name": "Simon Willison",
+      "title": "Quoting Daniel Jalkut",
+      "url": "https://simonwillison.net/2026/May/30/daniel-jalkut/#atom-everything",
+      "publishedAt": "2026-05-30T17:29:55+00:00",
+      "content": "My take on AI is, essentially, everybody who’s against it is too against it and everybody who’s for it is too for it. &mdash; Daniel Jalkut , via John Gruber Tags: ai , john-gruber"
     }
   ],
   "stats": {
-    "blogPosts": 4
+    "blogPosts": 15
   }
 }

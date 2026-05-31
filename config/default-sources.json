@@ -391,6 +391,46 @@
       "indexUrl": "https://claude.com/blog",
       "articleBaseUrl": "https://claude.com/blog/",
       "fetchMethod": "http"
+    },
+    {
+      "name": "OpenAI Blog",
+      "type": "rss",
+      "url": "https://openai.com/blog/rss.xml"
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "type": "rss",
+      "url": "https://deepmind.google/blog/rss.xml"
+    },
+    {
+      "name": "GitHub Blog",
+      "type": "rss",
+      "url": "https://github.blog/feed/"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "type": "rss",
+      "url": "https://huggingface.co/blog/feed.xml"
+    },
+    {
+      "name": "arXiv cs.AI",
+      "type": "rss",
+      "url": "https://rss.arxiv.org/rss/cs.AI"
+    },
+    {
+      "name": "Simon Willison",
+      "type": "rss",
+      "url": "https://simonwillison.net/atom/everything/"
+    },
+    {
+      "name": "Meta AI Blog",
+      "type": "rss",
+      "url": "https://ai.meta.com/blog/feed/"
+    },
+    {
+      "name": "Google AI Blog",
+      "type": "rss",
+      "url": "https://blog.research.google/feeds/posts/default"
     }
   ]
 }
