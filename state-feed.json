@@ -1,7 +1,6 @@
 {
   "seenTweets": {},
   "seenVideos": {
-    "ee5028a8-75be-11f1-bab0-67711adf1682": 1783071266030,
     "8cc3ae0d-bd6a-4b43-a0a4-6ee35f9b802e": 1783154978846,
     "substack:post:204393300": 1783243322440,
     "32e4b7a0-7118-11f1-a100-bf8895cb33ba": 1783243323333,
@@ -10,7 +9,8 @@
     "substack:post:203293676": 1783418396330,
     "fb9d2daa-719d-11f1-9e13-9f44da352371": 1783500193036,
     "substack:post:205716015": 1783590999535,
-    "85aa2fe0-7c35-413e-9d30-e877439f0fd3": 1783591000307
+    "85aa2fe0-7c35-413e-9d30-e877439f0fd3": 1783591000307,
+    "0a7f6d2c-3838-4a70-9c66-7b2d9d783409": 1783677135023
   },
   "seenArticles": {
     "https://www.anthropic.com/engineering/april-23-postmortem": 1783243336349,
