@@ -6,11 +6,11 @@
     "1d32d6b0-5dc8-454d-ae10-d56ee76393db": 1788520903311,
     "fbf77f76-0a17-4230-80fb-fd56e514eb13": 1788604410640,
     "26c9b971-a42b-461d-bab5-2ac8026924aa": 1788692089078,
-    "dc36d7b4-a1cb-11f1-a66e-afd86ce968a2": 1788784215112
+    "dc36d7b4-a1cb-11f1-a66e-afd86ce968a2": 1788784215112,
+    "substack:post:212802973": 1788866223050,
+    "93e6da38-4734-46f2-ac94-d3ba6e93e68b": 1788866223693
   },
   "seenArticles": {
-    "https://www.anthropic.com/engineering/april-23-postmortem": 1788184034168,
-    "https://www.anthropic.com/engineering/managed-agents": 1788184034799,
     "https://claude.com/blog/claude-in-chrome-generally-available": 1788604413418,
     "https://claude.com/blog/cowork-built-in-browser": 1788604413953,
     "https://claude.com/blog/artifacts-in-claude-code": 1788604414488,
