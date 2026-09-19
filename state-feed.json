@@ -1,13 +1,12 @@
 {
   "seenTweets": {},
   "seenVideos": {
-    "dc9ebcb5-ad83-4eae-a945-dd1af0de0aad": 1789125548050,
-    "8476d0dc-a726-11f1-86e6-bbc25e1787ef": 1789209854373,
     "1d32d6b0-5dc8-454d-ae10-d56ee76393db": 1789300183193,
     "fbf77f76-0a17-4230-80fb-fd56e514eb13": 1789389848749,
     "d2e9aa74-b080-11f1-8007-f31e2b6b4e53": 1789472563420,
     "substack:post:215289811": 1789472563688,
-    "51c4092c-b309-11f1-8603-fb8d30e1277f": 1789729938719
+    "51c4092c-b309-11f1-8603-fb8d30e1277f": 1789729938719,
+    "2ecd3b38-aca0-11f1-b6c4-13e4bbce7d30": 1789815424938
   },
   "seenArticles": {
     "https://claude.com/blog/claude-in-chrome-generally-available": 1789300185948,
