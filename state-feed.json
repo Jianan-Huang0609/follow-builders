@@ -9,11 +9,10 @@
     "09985d98-67c4-4c5e-a1be-6d201c56bc55": 1791116394881,
     "e2eb4b88-b7c1-11f1-a5c5-4b2557d321bc": 1791210894061,
     "77097e65-4ead-46c4-b497-36fa09bd0f11": 1791292610161,
-    "28c38604-c0da-11f1-8b1e-33a0102fe4b6": 1791292620282
+    "28c38604-c0da-11f1-8b1e-33a0102fe4b6": 1791292620282,
+    "substack:post:217893105": 1791379245534
   },
   "seenArticles": {
-    "https://www.anthropic.com/engineering/how-we-contain-claude": 1790771563088,
-    "https://claude.com/blog/claude-in-chrome-generally-available": 1790771563740,
     "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs": 1790944352839,
     "https://www.anthropic.com/engineering/april-23-postmortem": 1791027484652,
     "https://www.anthropic.com/engineering/managed-agents": 1791027485262,
