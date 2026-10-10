@@ -1,19 +1,16 @@
 {
   "seenTweets": {},
   "seenVideos": {
-    "substack:post:218414422": 1791027481287,
     "09985d98-67c4-4c5e-a1be-6d201c56bc55": 1791116394881,
     "e2eb4b88-b7c1-11f1-a5c5-4b2557d321bc": 1791210894061,
     "77097e65-4ead-46c4-b497-36fa09bd0f11": 1791292610161,
     "28c38604-c0da-11f1-8b1e-33a0102fe4b6": 1791292620282,
     "substack:post:217893105": 1791379245534,
     "8a1c6546-cdae-4bef-883d-56cb734967df": 1791466016109,
-    "994123ec-c395-11f1-b01e-fff03490a570": 1791551688291
+    "994123ec-c395-11f1-b01e-fff03490a570": 1791551688291,
+    "substack:post:219666029": 1791635390620
   },
   "seenArticles": {
-    "https://www.anthropic.com/engineering/april-23-postmortem": 1791027484652,
-    "https://www.anthropic.com/engineering/managed-agents": 1791027485262,
-    "https://claude.com/blog/cowork-is-now-claude": 1791027485929,
     "https://www.anthropic.com/engineering/how-we-contain-claude": 1791466019065
   }
 }
