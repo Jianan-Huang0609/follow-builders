@@ -9,11 +9,13 @@
     "flightcast:01M4BDW19ZFPED9TQ4S5DP60PY": 1791722848621,
     "44fa0b1c-be0b-11f1-b00d-cb6a27141e9e": 1791722848796,
     "substack:post:218414422": 1791818493279,
-    "d7ae4536-c437-11f1-9011-633961538ee5": 1791900574848
+    "d7ae4536-c437-11f1-9011-633961538ee5": 1791900574848,
+    "77097e65-4ead-46c4-b497-36fa09bd0f11": 1791978575789
   },
   "seenArticles": {
     "https://www.anthropic.com/engineering/how-we-contain-claude": 1791466019065,
     "https://www.anthropic.com/engineering/april-23-postmortem": 1791722851146,
-    "https://www.anthropic.com/engineering/managed-agents": 1791722851748
+    "https://www.anthropic.com/engineering/managed-agents": 1791722851748,
+    "https://www.anthropic.com/engineering/redesigning-source-control": 1791978579083
   }
 }
