@@ -1,7 +1,6 @@
 {
   "seenTweets": {},
   "seenVideos": {
-    "substack:post:218414422": 1791818493279,
     "d7ae4536-c437-11f1-9011-633961538ee5": 1791900574848,
     "77097e65-4ead-46c4-b497-36fa09bd0f11": 1791978575789,
     "6fed676e-c84d-11f1-a40c-678dc1ca0b76": 1792063586577,
@@ -9,10 +8,13 @@
     "substack:post:220316507": 1792233701893,
     "flightcast:01M4WXZJC42R6K30JBFDV56TDM": 1792321326119,
     "substack:post:220234130": 1792415505577,
-    "substack:post:219666029": 1792415506578
+    "substack:post:219666029": 1792415506578,
+    "6ee9a1f4-cbf7-11f1-bd53-0b2f603ad192": 1792496027804,
+    "994123ec-c395-11f1-b01e-fff03490a570": 1792496028051
   },
   "seenArticles": {
     "https://www.anthropic.com/engineering/redesigning-source-control": 1791978579083,
-    "https://www.anthropic.com/engineering/how-we-contain-claude": 1792233704756
+    "https://www.anthropic.com/engineering/how-we-contain-claude": 1792233704756,
+    "https://www.anthropic.com/engineering/april-23-postmortem": 1792496030554
   }
 }
