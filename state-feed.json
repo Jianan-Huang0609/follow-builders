@@ -1,7 +1,6 @@
 {
   "seenTweets": {},
   "seenVideos": {
-    "substack:post:220316507": 1792233701893,
     "flightcast:01M4WXZJC42R6K30JBFDV56TDM": 1792321326119,
     "substack:post:220234130": 1792415505577,
     "substack:post:219666029": 1792415506578,
@@ -10,10 +9,10 @@
     "substack:post:221372257": 1792583190014,
     "dae81b0d-921f-4bba-b027-454a92f2640e": 1792669786141,
     "c69c028a-cdc7-11f1-a97a-77799e86d8ea": 1792669786723,
-    "1b967280-ce7b-11f1-8a29-072c10b8d7bc": 1792755380614
+    "1b967280-ce7b-11f1-8a29-072c10b8d7bc": 1792755380614,
+    "substack:post:221647996": 1792839465616
   },
   "seenArticles": {
-    "https://www.anthropic.com/engineering/how-we-contain-claude": 1792233704756,
     "https://www.anthropic.com/engineering/april-23-postmortem": 1792496030554
   }
 }
