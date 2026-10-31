@@ -1,7 +1,6 @@
 {
   "seenTweets": {},
   "seenVideos": {
-    "substack:post:221647996": 1792839465616,
     "substack:post:221404681": 1792927509602,
     "flightcast:01M5FJNTDCZPD6VSAKD7W6S821": 1793019565056,
     "c1edee86-471f-4e57-848d-a45a5de1dc53": 1793019565349,
@@ -10,7 +9,8 @@
     "538a8146-d177-11f1-8079-5369dbb6e923": 1793191928952,
     "01a17e24-16fc-7437-bdba-3b11fa5abbe6": 1793191929182,
     "060e3c46-d339-11f1-a994-87ae12352fb9": 1793278690810,
-    "d22f823e-7b68-4f67-8a29-ccee5d42a5ef": 1793364764386
+    "d22f823e-7b68-4f67-8a29-ccee5d42a5ef": 1793364764386,
+    "youtube:v-d1WTqIULs": 1793449530216
   },
   "seenArticles": {}
 }
